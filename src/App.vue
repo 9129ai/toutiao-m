@@ -1,33 +1,26 @@
 <template>
   <div id="app">
     头条，黑马
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <i class="toutiao toutiao-shouye"></i>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <div style="font-size:32px">字体</div>
+    <div class="font-32">字体</div>
     <router-view />
   </div>
 </template>
-
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'App',
+  data () {
+    return {
+      name: 'vvv'
     }
   }
+}
+</script>
+<style lang="less" scoped>
+.font-32{
+  font-size:33px
 }
 </style>
